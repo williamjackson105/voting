@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	form#formAddUser(name="addplayer",method="post",action="/addplayer")
+		input#inputPlayerName(type="text", placeholder="playername", name="playername")
+		input#inputPlayerUrl(type="text", placeholder="http://", name="playerurl")
+		button#btnSubmit(type="submit") submit

@@ -1,0 +1,17 @@
+extends layout
+
+block content	
+	h1 Welcome to Player's Vote Site
+
+	form( method="post", action="/login")		
+		p Please Login To Your Account
+		label Username 
+		input(type="text", name="loginname", id='loginname')
+		br
+		label Password
+		input(type="password", name="loginpassword", id='loginpassword')
+		br
+		button(type="submit")
+			| Sign in
+	
+

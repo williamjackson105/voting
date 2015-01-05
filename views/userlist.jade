@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1.
+		User List
+
+	table(id="userlist")
+		tr
+			td User IP			
+			td Last Vote Date		
+			td Vote Count
+		each user, i in userlist
+			tr
+				td= user.ip
+				td= user.votedate
+				td= user.votecount

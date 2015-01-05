@@ -1,0 +1,43 @@
+extends layout
+
+block content
+	.main_container
+		script(src='js/main.js')
+		script(src='https://smart-ip.net/geoip-json?callback=ip_callback')
+		.content_holder
+			.title
+				GAME VOTING
+			#nav-menu
+				ul
+					li
+						a(href='#') Home	
+					li
+						a(href='#') About Us
+					li
+						a(href='#') Contact Us
+			.clear
+			.banner
+				img(src='images/banner.jpg', alt='')
+			.highestvote				
+			.searchmain
+				ul
+					li
+						input(type='text', value='')
+					li
+						input(type='button', value='Search')
+					li
+						input(type='button', value='Clear')
+			.clear
+			.leftpanel
+			.leaderboard
+				.leaderboard_main
+					div.leaderboardname Leader Board
+					.leaderboard_main2
+						.leaderboard_main3
+			.page_navigation
+				input(type='button', id='prev', value='< Prev')
+				input(type='button', id='next', value='Next >')
+				input(type='hidden', id='pagenum', value=0)
+				input(type='hidden', id='votedate', value=votedate)
+		.footer
+			Copy right 2013. All rights Reserved.
